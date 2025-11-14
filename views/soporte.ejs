@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Headland+One&family=Henny+Penny&family=Jacques+Francois&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/soporte.css" />
+
+  </head>
+  <body>
+    <%- include("partials/nav") %>
+    <main>
+        <div class="contenedor_soporte">
+            <div class="contenedor_info">
+                <h1>Necesitas Ayuda ?</h1>
+                <p>Estamos aquí para ayudarte. Completa el formulario y nuestro equipo de soporte se pondrá en contacto contigo lo antes posible.</p>
+                <div class="aurora">
+                <img src="images/aurora-2.fd71533d8ae9.webp" alt="">
+            </div>
+            </div>
+            <form action="">
+                <p>Enviar solicitud de soporte</p>
+                <div class="inputs-row">
+                    <input type="text" id="text" name="text" placeholder="Nombre completo" required>
+                    <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+                </div>
+                <textarea name="area" id="area" name="area" placeholder="Describe el problema o la consulta ..."></textarea>
+                <div class="botones">
+                    <button class="inicio">Volver al inicio</button>
+                    <button class="enviar">Enviar Solicitud</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <%- include("partials/footer") %>
+  </body>
+</html>

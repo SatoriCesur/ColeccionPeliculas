@@ -1,0 +1,142 @@
+/*-----------  ROOT  -------------*/
+:root {
+  --background-color-primary: #1e1e2f;
+  --background-color-secondary: #001632;
+  --background-claro: #ffffff;
+  --text-color: #ffffff;
+  --text-secondary: #001632;
+  --boton-primary: #42c042;
+  --boton-secondary: #d45959;
+  --font-familly: "Henny Penny", system-ui;
+  --font-familly-subtitle: "Jacques Francois", serif;
+  --font-botones: "Headland One", serif;
+}
+/*-------------  TODO  ------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+main {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 34rem;
+  background-color: rgb(9, 9, 109);
+  width: 100%;
+  .contenedor_soporte {
+    padding: 4rem; /* Este padding afecta la posición del footer5 */
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    .contenedor_info {
+      width: 100%;
+      height: 8rem;
+      background-color: rgb(14, 14, 71);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      color: var(--background-claro);
+      position: relative;
+      z-index: 3;
+      overflow: hidden;
+      h1 {
+        font-size: 2.2rem;
+        z-index: 2;
+        position: relative;
+      }
+      p {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        z-index: 2;
+        position: relative;
+      }
+      .aurora {
+        position: absolute;
+        width: 40rem;
+        height: 40rem;
+        right: -10rem;
+        bottom: -20rem;
+        z-index: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          z-index: 0;
+        }
+      }
+    }
+    form {
+      background-color: rgb(14, 14, 71);
+      width: 100%;
+      height: 16rem;
+      border-radius: 12px;
+      padding: 2rem;
+      color: var(--background-claro);
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1rem;
+      p {
+        font-size: 1.2rem;
+        width: 100%;
+      }
+      .inputs-row {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        input {
+          width: 49%;
+        }
+      }
+      input {
+        height: 2rem;
+        border-radius: 12px;
+        &::placeholder {
+          padding: 0 1rem;
+        }
+      }
+      textarea {
+        width: 100%;
+        height: 4rem;
+        border-radius: 12px;
+        &::placeholder {
+          padding: 0 1rem;
+        }
+      }
+      .botones {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 1rem;
+        button.inicio {
+          width: 10rem;
+          height: 2rem;
+          border-radius: 12px;
+          border: none;
+          background-color: #42c0427b;
+          color: var(--background-claro);
+          font-size: 1rem;
+        }
+        button.enviar {
+          width: 15rem;
+          height: 2rem;
+          border-radius: 12px;
+          border: none;
+          background-color: #d4595985;
+          color: var(--background-claro);
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+footer .contenedor_footer .footer5 {
+  right: 4.3rem;
+}

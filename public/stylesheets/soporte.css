@@ -1,7 +1,7 @@
 /*-----------  ROOT  -------------*/
 :root {
-  --background-color-primary: #1e1e2f;
-  --background-color-secondary: #001632;
+  --background-color-primary: rgb(14, 14, 71);
+  --background-color-secondary: rgb(9, 9, 109);
   --background-claro: #ffffff;
   --text-color: #ffffff;
   --text-secondary: #001632;

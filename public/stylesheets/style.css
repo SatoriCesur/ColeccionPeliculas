@@ -1,8 +1,8 @@
 
 /*-----------  ROOT  -------------*/
 :root {
-  --background-color-primary: #1e1e2f;
-  --background-color-secondary: #001632;
+  --background-color-primary: rgb(14, 14, 71);
+  --background-color-secondary: rgb(9, 9, 109);
   --background-claro: #ffffff;
   --text-color: #ffffff;
   --text-secondary: #001632;
@@ -41,7 +41,7 @@ nav.nav {
       height: 3rem;
     }
     a {
-      color: var(--text-secondary);
+      color: var(--background-color-secondary);
       font-size: 1.3rem;
     }
   }
@@ -51,7 +51,7 @@ nav.nav {
     justify-content: center;
     gap: 10rem;
     li a {
-      color: var(--text-secondary);
+      color: var(--background-color-secondary);
       font-size: 1.3rem;
     }
   }

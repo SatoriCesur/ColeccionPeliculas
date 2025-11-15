@@ -571,7 +571,7 @@ form{
           border-radius: 20px;
           border: 1px solid white;
           padding: 2rem;
-          background: url("/images/aurora-1.60a81233ca02.webp");
+          background: linear-gradient(10deg,rgb(25, 132, 168),rgb(44, 126, 213),rgb(168, 17, 171));
           background-position: center;
           background-repeat: no-repeat;
           background-size: 280vh;

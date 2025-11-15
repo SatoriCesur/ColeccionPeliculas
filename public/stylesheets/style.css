@@ -1,4 +1,3 @@
-
 /*-----------  ROOT  -------------*/
 :root {
   --background-color-primary: rgb(14, 14, 71);
@@ -56,12 +55,196 @@ nav.nav {
     }
   }
 }
+/* --- MODAL REGISTRO--- */
+.contenedor1 .contenedor_registro {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 850px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 6;
+  opacity: 0;
+}
+.contenedor1 .contenedor_registro.active {
+  opacity: 1; 
+}
+
+/* --- MODAL ACCESO --- */
+.contenedor1 .contenedor_acceso {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+  display: none ;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 6;
+  visibility: hidden ;
+}
+
+.contenedor1 .contenedor_acceso.active {
+  display: flex;
+  visibility: visible;
+}
+
+.contenedor1 .acceso {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  align-items: center;
+  gap: 1rem;
+  border: 3px solid #00224f;
+  border-radius: 15px;
+  padding: 2rem;
+  position: relative;
+}
+
+.contenedor1 .cerrar-acceso {
+  position: absolute;
+  top: -3rem;
+  right: -1.5rem;
+  font-size: 6rem;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+  z-index: 8;
+  display: block;
+}
+
+.contenedor1 .logo_acceso {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.contenedor1 .logo_acceso a {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.formulario-acceso {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-acceso input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 2px solid #00224f;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.formulario-acceso button {
+  width: 140px;
+  padding: 12px;
+  background: #e48b8b;
+  border: 2px solid #00224f;
+  color: #00224f;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  align-self: flex-end;
+  margin-top: 0.5rem;
+}
+
+.formulario-acceso button:hover {
+  background: #ff9c9c;
+}
+
+.contenedor1 .registro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-claro);
+  align-items: start;
+  gap: 1rem;
+  border: 3px solid #00224f;
+  border-radius: 15px;
+  height: 100%;
+  padding: 2rem;
+}
+
+.contenedor1 .logo_registro {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.contenedor1 .logo_registro a {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.contenedor1 .primer_input,
+.contenedor1 .segundo_input {
+  display: flex;
+  gap: 2rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contenedor1 form input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 2px solid #00224f;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.contenedor1 form button {
+  width: 10rem;
+  padding: 12px;
+  background: #e48b8b;
+  border: 2px solid #00224f;
+  color: #00224f;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  align-self: flex-end;
+  margin-top: 1rem;
+  margin-right: -0.5rem;
+}
+
+.contenedor1 form button:hover {
+  background: #ff9c9c;
+}
+
 .contenedor1 {
   background: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
-    url("../images/superman_fondo.jpg") center no-repeat;
+    url("/images/superman_fondo.jpg") center no-repeat;
   background-size: cover;
   width: 100%;
   height: 90.8vh;
+  position: relative;
   .contenedor_flex {
     width: 50%;
     display: flex;
@@ -85,6 +268,88 @@ nav.nav {
       font-family: var(--font-familly-subtitle);
     }
   }
+  /*-----------MODAL REGISTRO--------------*/
+  .contenedor_registro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    z-index: 6;
+}
+
+  .registro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-claro);
+    border: 3px solid #00224f;
+    border-radius: 15px;
+    height: 100%;
+  }
+  .cerrar {
+    position: fixed;
+    top: -3rem;
+    right: -1.3rem;
+    font-size: 6rem;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+  .logo_registro {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    .logo_registro a {
+      text-decoration: none;
+      font-size: 28px;
+      font-weight: 700;
+      color: #00224f;
+    }
+  }
+
+  .primer_input,
+  .segundo_input {
+    display: flex;
+    gap: 2rem;
+    margin: 0.5rem;
+
+  }
+
+  form input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+
+    border: 2px solid #00224f;
+    border-radius: 10px;
+  
+  }
+  button {
+      width: 140px;
+      padding: 12px;
+      background: #e48b8b;
+      border: 2px solid #00224f;
+      color: #00224f;
+      font-size: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #ff9c9c;
+    }
+
   .imagenes {
     width: 50%;
     height: 100%;
@@ -120,11 +385,14 @@ nav.nav {
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+      padding: 1rem;
+      background:none;
+      z-index: 7;
 
       i.fas.fa-arrow-right {
         font-size: 2rem;
         color: var(--text-color);
-        cursor: pointer;
         display: inline-block;
         border-radius: 50%;
       }
@@ -214,6 +482,7 @@ nav.nav {
     }
   }
 }
+
 /*-----------HEADER DE LA SECCION 2---------*/
 .contenedor2 {
   width: 100%;
@@ -347,7 +616,6 @@ nav.nav {
       }
     }
   }
-
 }
 footer {
   width: 100%;

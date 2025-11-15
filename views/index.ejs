@@ -15,11 +15,101 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="/javascripts/index.js" defer></script>
   </head>
   <body>
     <%- include("partials/nav") %>
     <main>
       <section class="contenedor1">
+        <div class="contenedor_registro">
+          <div class="registro">
+                <span class="cerrar">&times;</span>
+                <div class="logo_registro">
+                <svg
+                  width="80"
+                  height="73"
+                  viewBox="0 0 80 73"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.875 25.375H18.125C20.0478 25.375 21.8919 24.6112 23.2515 23.2515C24.6112 21.8919 25.375 20.0478 25.375 18.125V10.875H29V18.125C29 20.0478 29.7638 21.8919 31.1235 23.2515C32.4831 24.6112 34.3272 25.375 36.25 25.375H43.5C45.4228 25.375 47.2669 24.6112 48.6265 23.2515C49.9862 21.8919 50.75 20.0478 50.75 18.125V10.875H54.375V18.125C54.375 20.0478 55.1388 21.8919 56.4985 23.2515C57.8581 24.6112 59.7022 25.375 61.625 25.375H68.875C70.7978 25.375 72.6419 24.6112 74.0015 23.2515C75.3612 21.8919 76.125 20.0478 76.125 18.125V10.875H79.75V0H0V10.875H3.625V18.125C3.625 20.0478 4.38884 21.8919 5.74848 23.2515C7.10811 24.6112 8.95218 25.375 10.875 25.375ZM36.25 54.375L50.75 43.5L36.25 32.625V54.375ZM10.875 72.5H68.875C70.7978 72.5 72.6419 71.7362 74.0015 70.3765C75.3612 69.0169 76.125 67.1728 76.125 65.25V30.6675C73.929 31.9617 71.4239 32.638 68.875 32.625V65.25H10.875V32.625C8.22875 32.625 5.76375 31.9362 3.625 30.6675V65.25C3.625 67.1728 4.38884 69.0169 5.74848 70.3765C7.10811 71.7362 8.95218 72.5 10.875 72.5Z"
+                    fill="#00224F"
+                  />
+                </svg>
+                <a href="">BIBLIOCINE</a>
+              </div>
+              <form action="">
+                <div class="primer_input">
+                  <input
+                    type="text"
+                    name="usuario"
+                    id="usuario"
+                    placeholder="Nombre y Apellido"
+                  />
+                  <input
+                    type="password"
+                    name="contrasena"
+                    id="contrasena"
+                    placeholder="Correo Electrónico"
+                  />
+                </div>
+                <div class="segundo_input">
+                  <input
+                    type="text"
+                    name="usuario"
+                    id="usuario"
+                    placeholder="Nombre de Usuario"
+                  />
+                  <input
+                    type="password"
+                    name="contrasena"
+                    id="contrasena"
+                    placeholder="Contraseña"
+                  />
+                </div>
+                <button class="registro_acceder" type="submit">Acceder</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contenedor_acceso">
+          <div class="acceso">
+                <span class="cerrar-acceso">&times;</span>
+                <div class="logo_acceso">
+                <svg
+                  width="80"
+                  height="73"
+                  viewBox="0 0 80 73"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.875 25.375H18.125C20.0478 25.375 21.8919 24.6112 23.2515 23.2515C24.6112 21.8919 25.375 20.0478 25.375 18.125V10.875H29V18.125C29 20.0478 29.7638 21.8919 31.1235 23.2515C32.4831 24.6112 34.3272 25.375 36.25 25.375H43.5C45.4228 25.375 47.2669 24.6112 48.6265 23.2515C49.9862 21.8919 50.75 20.0478 50.75 18.125V10.875H54.375V18.125C54.375 20.0478 55.1388 21.8919 56.4985 23.2515C57.8581 24.6112 59.7022 25.375 61.625 25.375H68.875C70.7978 25.375 72.6419 24.6112 74.0015 23.2515C75.3612 21.8919 76.125 20.0478 76.125 18.125V10.875H79.75V0H0V10.875H3.625V18.125C3.625 20.0478 4.38884 21.8919 5.74848 23.2515C7.10811 24.6112 8.95218 25.375 10.875 25.375ZM36.25 54.375L50.75 43.5L36.25 32.625V54.375ZM10.875 72.5H68.875C70.7978 72.5 72.6419 71.7362 74.0015 70.3765C75.3612 69.0169 76.125 67.1728 76.125 65.25V30.6675C73.929 31.9617 71.4239 32.638 68.875 32.625V65.25H10.875V32.625C8.22875 32.625 5.76375 31.9362 3.625 30.6675V65.25C3.625 67.1728 4.38884 69.0169 5.74848 70.3765C7.10811 71.7362 8.95218 72.5 10.875 72.5Z"
+                    fill="#00224F"
+                  />
+                </svg>
+                <a href="">BIBLIOCINE</a>
+              </div>
+              <form class="formulario-acceso" action="">
+                <input
+                  type="text"
+                  name="usuario"
+                  id="usuario-acceso"
+                  placeholder="Usuario"
+                />
+                <input
+                  type="password"
+                  name="contrasena"
+                  id="contrasena-acceso"
+                  placeholder="Contraseña"
+                />
+                <button class="acceso_acceder" type="submit">Acceder</button>
+              </form>
+            </div>
+          </div>
+        
         <div class="contenedor_flex">
           <div class="contenido_h1">
             <h1>BIBLIOCINE</h1>
@@ -44,9 +134,10 @@
           </div>
         </div>
         <div class="contenedor_botones">
-          <div class="icono">
-            <i class="fas fa-arrow-right" aria-hidden="true"></i>
-          </div>
+            <button type="button" class="icono" aria-label="Siguiente">
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+
           <div class="botones">
             <button class="boton-registro">Registro</button>
             <button class="boton-acceso">Acceso</button>

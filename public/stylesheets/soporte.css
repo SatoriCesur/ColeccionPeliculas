@@ -97,17 +97,13 @@ main {
       input {
         height: 2rem;
         border-radius: 12px;
-        &::placeholder {
-          padding: 0 1rem;
-        }
+        padding: 1rem;
       }
       textarea {
         width: 100%;
         height: 4rem;
         border-radius: 12px;
-        &::placeholder {
-          padding: 0 1rem;
-        }
+        padding: 1rem;
       }
       .botones {
         display: flex;
@@ -123,6 +119,7 @@ main {
           background-color: #42c0427b;
           color: var(--background-claro);
           font-size: 1rem;
+          cursor: pointer;
         }
         button.enviar {
           width: 15rem;
@@ -132,6 +129,7 @@ main {
           background-color: #d4595985;
           color: var(--background-claro);
           font-size: 1rem;
+          cursor: pointer;
         }
       }
     }

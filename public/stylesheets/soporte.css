@@ -26,8 +26,9 @@ main {
   height: 34rem;
   background-color: rgb(9, 9, 109);
   width: 100%;
+
   .contenedor_soporte {
-    padding: 4rem; /* Este padding afecta la posición del footer5 */
+    padding: 4rem;
     display: flex;
     align-items: flex-start;
     width: 90%;
@@ -137,4 +138,36 @@ main {
 }
 footer .contenedor_footer .footer5 {
   right: 4.3rem;
+}
+
+/* -- MODAL SOPORTE -- */
+.modal_solicitud {
+  position: fixed;
+  bottom: 1rem;
+  right: 3rem;
+  width: 35rem;
+  height: 10rem;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.modal_solicitud.activado {
+  visibility: visible;
+  opacity: 1;
+}
+.modal_solicitud .modal_contenido {
+  background-color: var(--boton-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--background-claro);
+  box-shadow: 0 0 10px black;
+}
+.modal_solicitud .modal_contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.modal_solicitud .modal_contenido p {
+  font-size: 1.2rem;
 }

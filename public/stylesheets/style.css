@@ -71,7 +71,7 @@ nav.nav {
   opacity: 0;
 }
 .contenedor1 .contenedor_registro.active {
-  opacity: 1; 
+  opacity: 1;
 }
 
 /* --- MODAL ACCESO --- */
@@ -82,12 +82,12 @@ nav.nav {
   transform: translate(-50%, -50%);
   width: 400px;
   height: auto;
-  display: none ;
+  display: none;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   z-index: 6;
-  visibility: hidden ;
+  visibility: hidden;
 }
 
 .contenedor1 .contenedor_acceso.active {
@@ -203,7 +203,7 @@ nav.nav {
   margin: 0.5rem 0;
   width: 100%;
 }
-form{
+form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -281,7 +281,7 @@ form{
     align-items: start;
     flex-direction: column;
     z-index: 6;
-}
+  }
 
   .registro {
     width: 100%;
@@ -322,7 +322,6 @@ form{
     display: flex;
     gap: 2rem;
     margin: 0.5rem;
-
   }
 
   form input {
@@ -332,23 +331,22 @@ form{
 
     border: 2px solid #00224f;
     border-radius: 10px;
-  
   }
   button {
-      width: 140px;
-      padding: 12px;
-      background: #e48b8b;
-      border: 2px solid #00224f;
-      color: #00224f;
-      font-size: 15px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
+    width: 140px;
+    padding: 12px;
+    background: #e48b8b;
+    border: 2px solid #00224f;
+    color: #00224f;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
 
-    button:hover {
-      background: #ff9c9c;
-    }
+  button:hover {
+    background: #ff9c9c;
+  }
 
   .imagenes {
     width: 50%;
@@ -387,7 +385,7 @@ form{
       justify-content: center;
       cursor: pointer;
       padding: 1rem;
-      background:none;
+      background: none;
       z-index: 7;
 
       i.fas.fa-arrow-right {
@@ -571,7 +569,12 @@ form{
           border-radius: 20px;
           border: 1px solid white;
           padding: 2rem;
-          background: linear-gradient(10deg,rgb(25, 132, 168),rgb(44, 126, 213),rgb(168, 17, 171));
+          background: linear-gradient(
+            10deg,
+            rgb(25, 132, 168),
+            rgb(44, 126, 213),
+            rgb(168, 17, 171)
+          );
           background-position: center;
           background-repeat: no-repeat;
           background-size: 280vh;
@@ -696,4 +699,87 @@ footer {
       color: var(--background-color-secondary);
     }
   }
+}
+/*-- MODAL DETALLES --*/
+.modal_detalles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: var(--text-secondary);
+  width: 900px;
+  height: 500px;
+  border-radius: 12px;
+  padding: 5rem;
+  border: 2px solid var(--background-claro);  
+  z-index: 2;
+  box-shadow: 0 0 40px rgb(0, 0, 0);
+  opacity: 0;
+  overflow: hidden;
+  .aurora_contenedor {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background: url("/images/aurora-2.fd71533d8ae9.webp") center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    left: 0;
+    z-index: 1;
+  }
+
+  .contenedor_detalles {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 250px;
+      height: 330px;
+      border-radius: 12px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 12px;
+      z-index: 3;
+    }
+    .contenedor_texto {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      h2 {
+        font-size: 2rem;
+        color: var(--background-claro);
+        z-index: 3;
+      }
+      .año,
+      .protagonista,
+      .sinopsis {
+        font-size: 1.2rem;
+        color: var(--background-claro);
+        z-index: 3;
+      }
+      .año {
+        margin-top: -2rem;
+      }
+      .sinopsis {
+        width: 400px;
+      }
+    }
+
+  }
+  .cerrar-detalles{
+    position: absolute;
+    top: -4.5rem;
+    right: -2.2rem;
+    font-size: 8rem;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    z-index: 3;
+  }
+}
+.modal_detalles.detalles_activo {
+  opacity: 1;
+  overflow: visible;
 }

@@ -26,6 +26,7 @@ main {
   height: 34rem;
   background-color: rgb(9, 9, 109);
   width: 100%;
+  height: 85vh;
 
   .contenedor_soporte {
     padding: 4rem;

@@ -363,7 +363,11 @@ form {
       background-color: #ffffff;
       object-fit: cover;
       object-position: center;
+      &:nth-child(4) {
+        object-position: left;
+      }
     }
+    
   }
   .contenedor_botones {
     display: flex;
@@ -588,6 +592,9 @@ form {
             object-fit: cover;
             object-position: center;
           }
+          .soul_left {
+            object-position: left;
+          }
         }
         .peliculas_texto {
           flex-shrink: 0;
@@ -724,7 +731,7 @@ footer {
     background-size: cover;
     overflow: hidden;
     left: 0;
-    z-index: 1;
+    z-index: 0;
   }
 
   .contenedor_detalles {

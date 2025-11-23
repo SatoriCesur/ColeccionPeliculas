@@ -173,3 +173,9 @@ footer .contenedor_footer .footer5 {
 .modal_solicitud .modal_contenido p {
   font-size: 1.2rem;
 }
+.enlace_inicio {
+  color: var(--background-claro);
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+}

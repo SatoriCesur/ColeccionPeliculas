@@ -1,0 +1,115 @@
+/*-----------  ROOT  -------------*/
+:root {
+  --background-color-primary: rgb(14, 14, 71);
+  --background-color-secondary: rgb(9, 9, 109);
+  --background-claro: #ffffff;
+  --text-color: #ffffff;
+  --text-secondary: #001632;
+  --boton-primary: #42c042;
+  --boton-secondary: #d45959;
+  --font-familly: "Henny Penny", system-ui;
+  --font-familly-subtitle: "Jacques Francois", serif;
+  --font-botones: "Headland One", serif;
+}
+/*-------------  TODO  ------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+h2{
+    font-family: var(--font-familly-subtitle);
+    color: var(--background-color-primary);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.detalle-copia-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  height: 100%;
+  padding: 4.7rem;
+  background: linear-gradient(120deg, var(--background-color-primary) 0%, var(--background-color-secondary) 100%);
+}
+
+.detalle-copia-container {
+  background: var(--background-claro);
+  box-shadow: 0 8px 32px rgba(14,14,71,0.13);
+  padding: 2.5rem 3rem;
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  font-family: var(--font-familly-subtitle);
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  border-radius: 12px;
+
+}
+
+.detalle-copia-img {
+  width: 260px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 0;
+  margin-right: 2rem;
+  box-shadow: 0 4px 18px rgba(14,14,71,0.12);
+}
+.detalle-copia-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 250px;
+}
+
+.detalle-copia-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 1.7rem 0;
+  text-align: left;
+}
+
+.detalle-copia-list li {
+  margin-bottom: 0.9rem;
+  font-size: 1.13rem;
+  color: var(--background-color-primary);
+  background: #e0e7ff;
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  font-family: var(--font-familly);
+}
+
+.detalle-copia-volver {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background: var(--boton-primary);
+  color: var(--text-color);
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(14,14,71,0.10);
+  border: none;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+  font-family: var(--font-botones);
+}
+
+.detalle-copia-volver:hover {
+  background: var(--boton-secondary);
+  transform: scale(1.05);
+}
+
+.detalle-copia-volver i {
+  font-size: 1.1em;
+}

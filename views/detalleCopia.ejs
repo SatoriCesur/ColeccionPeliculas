@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle de la copia</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/cuenta.css" />
+    <link rel="stylesheet" href="/stylesheets/detalleCopia.css" />
+  </head>
+  <body>
+    <%- include("partials/nav_cuenta") %>
+    <main class="detalle-copia-main">
+      <div class="detalle-copia-container">
+        <img src="<%= copia.pelicula.imagen %>" alt="<%= copia.pelicula.titulo %>" class="detalle-copia-img" />
+        <div class="detalle-copia-info">
+          <h2><%= copia.pelicula.titulo %> (<%= copia.pelicula.anio %>)</h2>
+          <ul class="detalle-copia-list">
+            <li><strong>Director:</strong> <%= copia.pelicula.director %></li>
+            <li><strong>Formato:</strong> <%= copia.formato %></li>
+            <li><strong>ID de copia:</strong> <%= copia.id %></li>
+          </ul>
+          <a href="/cuenta" class="detalle-copia-volver"><i class="fas fa-arrow-left"></i> Volver a mi cuenta</a>
+        </div>
+      </div>
+    </main>
+    <%- include("partials/footer") %>
+  </body>
+</html>

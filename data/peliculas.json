@@ -1,8 +1,8 @@
 [
-  { "id": 1, "titulo": "Hagov", "anio": 2024, "director": "Ridley Scott", "imagen": "/images/Hagov.jpeg" },
-  { "id": 2, "titulo": "Deadpool", "anio": 2022, "director": "Tim Miller", "imagen": "/images/deadpool.jpg" },
-  { "id": 3, "titulo": "Juego Sucio", "anio": 2025, "director": "Mark Wahlberg", "imagen": "/images/juegosucio.jpg" },
-  { "id": 4, "titulo": "Bella y la Bestia", "anio": 2021, "director": "Bill Condon", "imagen": "/images/bellaylabestia.webp" },
-  { "id": 5, "titulo": "Garfield", "anio": 2024, "director": "Mark Dindal", "imagen": "/images/garfield.webp" },
-  { "id": 6, "titulo": "The Little Things", "anio": 2024, "director": "John Lee Hancock", "imagen": "/images/thelittlethings.png" }
+  { "id": 1, "titulo": "Hagov", "anio": 2024, "director": "Ridley Scott", "imagen": "/images/Hagov.jpeg", "descripcion": "Un épico viaje de supervivencia y redención en un mundo post-apocalíptico." },
+  { "id": 2, "titulo": "Deadpool", "anio": 2022, "director": "Tim Miller", "imagen": "/images/deadpool.jpg", "descripcion": "El antihéroe más irreverente regresa para enfrentarse a nuevos enemigos con su característico humor negro." },
+  { "id": 3, "titulo": "Juego Sucio", "anio": 2025, "director": "Mark Wahlberg", "imagen": "/images/juegosucio.jpg", "descripcion": "Un thriller de acción donde la traición y el crimen se mezclan en una peligrosa partida." },
+  { "id": 4, "titulo": "Bella y la Bestia", "anio": 2021, "director": "Bill Condon", "imagen": "/images/bellaylabestia.webp", "descripcion": "La clásica historia de amor entre Bella y la Bestia, con música y magia renovadas." },
+  { "id": 5, "titulo": "Garfield", "anio": 2024, "director": "Mark Dindal", "imagen": "/images/garfield.webp", "descripcion": "El gato más famoso y perezoso vive nuevas aventuras llenas de humor y comida." },
+  { "id": 6, "titulo": "The Little Things", "anio": 2024, "director": "John Lee Hancock", "imagen": "/images/thelittlethings.png", "descripcion": "Dos detectives se ven envueltos en una investigación donde los pequeños detalles marcan la diferencia." }
 ]

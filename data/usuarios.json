@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nombre": "María Robles",
+    "copias": [
+      { "id": 1, "peliculaId": 1, "formato": "BLUE RAY" },
+      { "id": 2, "peliculaId": 2, "formato": "DIGITAL" },
+      { "id": 3, "peliculaId": 3, "formato": "DIGITAL" },
+      { "id": 4, "peliculaId": 4, "formato": "DVD" },
+      { "id": 5, "peliculaId": 5, "formato": "BLUE RAY" },
+      { "id": 6, "peliculaId": 6, "formato": "BLUE RAY" }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": 1, "titulo": "Hagov", "anio": 2024, "director": "Ridley Scott", "imagen": "/images/Hagov.jpeg" },
+  { "id": 2, "titulo": "Deadpool", "anio": 2022, "director": "Tim Miller", "imagen": "/images/deadpool.jpg" },
+  { "id": 3, "titulo": "Juego Sucio", "anio": 2025, "director": "Mark Wahlberg", "imagen": "/images/juegosucio.jpg" },
+  { "id": 4, "titulo": "Bella y la Bestia", "anio": 2021, "director": "Bill Condon", "imagen": "/images/bellaylabestia.webp" },
+  { "id": 5, "titulo": "Garfield", "anio": 2024, "director": "Mark Dindal", "imagen": "/images/garfield.webp" },
+  { "id": 6, "titulo": "The Little Things", "anio": 2024, "director": "John Lee Hancock", "imagen": "/images/thelittlethings.png" }
+]

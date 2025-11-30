@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuenta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Headland+One&family=Henny+Penny&family=Jacques+Francois&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/cuenta.css" />
+  </head>
+  <body>
+    <%- include("partials/nav_cuenta") %>
+    <main class="usuario-main">
+      <div class="header_main">
+        <h2>Mis Peliculas</h2>
+        <button class="usuario-add-btn">+ Añadir copia</button>
+      </div>
+      <div class="usuario-grid">
+        <% usuario.copias.forEach(copia => { %>
+        <div class="usuario-card" style="background-image: url('<%= copia.pelicula.imagen %>')">
+          <div class="usuario-card-info">
+            <h3><%= copia.pelicula.titulo %></h3>
+            <p><%= copia.pelicula.anio %> - <%= copia.formato %></p>
+            <a href="/copia/<%= copia.id %>" class="usuario-detalle-btn"
+              >Ver detalle</a
+            >
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </main>
+    <%- include("partials/footer") %>
+  </body>
+  <script src="/javascripts/soporte.js"></script>
+</html>

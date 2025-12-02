@@ -97,9 +97,8 @@
 }
 
 .usuario-detalle-btn {
-  background: var(--text-secondary);
+  background: linear-gradient(45deg,var(--text-secondary),rgb(106, 106, 185), var(--boton-primary));
   color: var(--background-claro);
-  border: none;
   border-radius: 8px;
   padding: 0.5rem 1rem;
   text-align: center;

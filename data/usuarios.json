@@ -1,33 +1,90 @@
 [
   {
     "id": 1,
-    "nombre": "María Robles",
+    "nombre": "Maria",
     "contrasena": "1234",
+    "imagen": "/images/usuario_maria.jpg",
     "copias": [
-      { "id": 1, "peliculaId": 1, "formato": "BLUE RAY" },
-      { "id": 2, "peliculaId": 2, "formato": "DIGITAL" },
-      { "id": 3, "peliculaId": 3, "formato": "DIGITAL" },
-      { "id": 4, "peliculaId": 4, "formato": "DVD" },
-      { "id": 5, "peliculaId": 5, "formato": "BLUE RAY" },
-      { "id": 6, "peliculaId": 6, "formato": "BLUE RAY" }
+      {
+        "id": 1,
+        "peliculaId": 1,
+        "formato": "BLUE RAY"
+      },
+      {
+        "id": 2,
+        "peliculaId": 2,
+        "formato": "DIGITAL"
+      },
+      {
+        "id": 3,
+        "peliculaId": 3,
+        "formato": "DIGITAL"
+      },
+      {
+        "id": 4,
+        "peliculaId": 4,
+        "formato": "DVD"
+      },
+      {
+        "id": 5,
+        "peliculaId": 5,
+        "formato": "BLUE RAY"
+      },
+      {
+        "id": 6,
+        "peliculaId": 6,
+        "formato": "BLUE RAY"
+      }
     ]
   },
   {
     "id": 2,
-    "nombre": "Carlos Pérez",
+    "nombre": "Carlos",
     "contrasena": "abcd",
+    "imagen": "/images/usuario_carlos.jpg",
     "copias": [
-      { "id": 7, "peliculaId": 2, "formato": "DVD" },
-      { "id": 8, "peliculaId": 3, "formato": "BLUE RAY" }
+      {
+        "id": 7,
+        "peliculaId": 2,
+        "formato": "DVD"
+      },
+      {
+        "id": 8,
+        "peliculaId": 3,
+        "formato": "BLUE RAY"
+      }
     ]
   },
   {
     "id": 3,
-    "nombre": "Lucía Gómez",
+    "nombre": "Lucia",
     "contrasena": "lucia",
+    "imagen": "/images/usuario_lucia.jpeg",
     "copias": [
-      { "id": 9, "peliculaId": 4, "formato": "DIGITAL" },
-      { "id": 10, "peliculaId": 1, "formato": "DVD" }
+      {
+        "id": 9,
+        "peliculaId": 4,
+        "formato": "DIGITAL"
+      },
+      {
+        "id": 10,
+        "peliculaId": 1,
+        "formato": "DVD"
+      }
     ]
+  },
+  {
+    "id": 4,
+    "nombre": "juan",
+    "contrasena": "1234",
+    "imagen": "/images/usuario_default.webp",
+    "copias": []
+  },
+  {
+    "id": 5,
+    "nombre": "Laura",
+    "contrasena": "1234",
+    "imagen": "/images/usuario_default.webp",
+    "copias": []
   }
 ]

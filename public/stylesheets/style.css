@@ -790,3 +790,55 @@ footer {
   opacity: 1;
   overflow: visible;
 }
+
+/*----------- nav cuenta ------------*/
+.buscar_peli {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--background-color-secondary);
+  border-radius: 12px;
+  font-size: 1rem;
+}
+.imagen_usuario {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 0.5rem;
+  border: 2px solid var(--background-color-secondary);
+}
+.direccion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  p{
+    font-size: 1.5rem;
+    color: var(--background-color-secondary);
+  }
+}
+
+.fila-inputs {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+.fila-inputs input {
+  flex: 1;
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 2px solid #00224f;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.login-error {
+  color: #d32f2f;
+  background: #ffeaea;
+  border: 1px solid #d32f2f;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}

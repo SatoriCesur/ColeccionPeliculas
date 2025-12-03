@@ -12,13 +12,17 @@
             fill="#00224F"
           />
         </svg>
-        <a href="">BIBLIOCINE</a>
+        <a href="/">BIBLIOCINE</a>
       </div>
       <div class="enlaces">
         <ul>
-          <li><input type="text" placeholder="Buscar película ..."></li>
-          <li><a href="/soporte">María Robles</a></li>
-          <li><a href="/cuenta">Cerrar Sesión</a></li>
+          <li><input class="buscar_peli" type="text" placeholder="Buscar película ..."></li>
+          <li class="direccion">
+            <p><%= usuario.nombre %></p>
+            <img class="imagen_usuario" src="<%= usuario.imagen %>" alt="Foto de <%= usuario.nombre %>">
+          </li>
+
+          <li><a href="/">Cerrar Sesión</a></li>
         </ul>
       </div>
     </nav>

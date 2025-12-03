@@ -37,38 +37,41 @@
                     fill="#00224F"
                   />
                 </svg>
-                <a href="">BIBLIOCINE</a>
+                <a href="/">BIBLIOCINE</a>
               </div>
-              <form action="/cuenta" method="post" class="formulario-registro">
-                <div class="primer_input">
+              <form action="/registro" method="post" class="formulario-registro">
+                <div class="fila-inputs">
                   <input
                     type="text"
-                    name="usuario"
-                    id="usuario"
-                    placeholder="Nombre y Apellido"
-                  />
-                  <input
-                    type="password"
-                    name="contrasena"
-                    id="contrasena"
-                    placeholder="Correo Electrónico"
-                  />
-                </div>
-                <div class="segundo_input">
-                  <input
-                    type="text"
-                    name="usuario"
-                    id="usuario"
+                    name="nombre"
+                    id="nombre"
                     placeholder="Nombre de Usuario"
+                    required
                   />
                   <input
                     type="password"
                     name="contrasena"
                     id="contrasena"
                     placeholder="Contraseña"
+                    required
                   />
                 </div>
-                <button class="registro_acceder" type="submit">Acceder</button>
+                <div class="fila-inputs">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="imagen"
+                    id="imagen"
+                    placeholder="URL de imagen de perfil"
+                  />
+                </div>
+                <button class="registro_acceder" type="submit">Registrarse</button>
               </form>
             </div>
           </div>
@@ -92,6 +95,9 @@
                 </svg>
                 <a href="">BIBLIOCINE</a>
               </div>
+              <% if (typeof error !== 'undefined' && error) { %>
+      <div class="login-error"><%= error %></div>
+    <% } %>
               <form class="formulario-acceso" method="post" action="/login">
                 <input
                   type="text"

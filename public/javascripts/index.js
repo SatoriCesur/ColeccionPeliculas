@@ -38,6 +38,14 @@ contenedorAcceso?.addEventListener("click", (e) => {
   }
 });
 
+// Mostrar modal de acceso si hay error de login
+if (typeof window !== 'undefined') {
+  const loginError = document.querySelector('.login-error');
+  if (loginError && contenedorAcceso) {
+    contenedorAcceso.classList.add('active');
+  }
+}
+
 // --- CAMBIAR PELICULAS ---
 const peliculas = [
   "/images/superman_fondo.jpg",

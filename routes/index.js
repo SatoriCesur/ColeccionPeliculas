@@ -85,7 +85,16 @@ router.get('/cuenta', function(req, res, next) {
 });
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Colección de Peliculas' });
+  const fs = require('fs');
+  const path = require('path');
+  const peliculasAniadidasPath = path.join(__dirname, '../data/peliculas_aniadidas.json');
+  let peliculas = [];
+  try {
+    peliculas = JSON.parse(fs.readFileSync(peliculasAniadidasPath, 'utf8'));
+  } catch (err) {
+    // Si hay error, dejar el array vacío
+  }
+  res.render('index', { title: 'Colección de Peliculas', peliculas });
 });
 
 /* GET sopport page. */

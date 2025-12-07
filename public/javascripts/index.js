@@ -69,8 +69,27 @@ const detallesBotones = document.querySelectorAll(".boton-detalles");
 const modalDetalles = document.querySelector(".modal_detalles");
 const cerrarDetalles = document.querySelector(".cerrar-detalles");
 
+
 detallesBotones.forEach(boton => {
   boton.addEventListener("click", () => {
+    // Obtener datos de la película desde los atributos data-*
+    const titulo = boton.getAttribute("data-titulo");
+    const anio = boton.getAttribute("data-anio");
+    const img = boton.getAttribute("data-img");
+    const alt = boton.getAttribute("data-alt");
+
+    // Actualizar el contenido del modal
+    document.getElementById("modal-titulo").textContent = titulo;
+    document.getElementById("modal-anio").textContent = anio;
+    document.getElementById("modal-img").src = img;
+    document.getElementById("modal-img").alt = alt;
+
+    // Si tienes protagonista y sinopsis en el JSON, puedes añadir:
+    const protagonista = boton.getAttribute("data-protagonista") || "";
+    const sinopsis = boton.getAttribute("data-sinopsis") || "";
+    document.getElementById("modal-protagonista").textContent = protagonista;
+    document.getElementById("modal-sinopsis").textContent = sinopsis;
+
     modalDetalles.classList.add("detalles_activo");
   });
 });

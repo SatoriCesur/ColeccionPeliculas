@@ -168,12 +168,12 @@
           <!-- MODAL DETALLES-->
            <div class="modal_detalles">
               <div class="contenedor_detalles">
-                <img src="/images/new-poster-as-wallpaper-v0-oljaquwnw87e1.webp" alt="Superman">
+                <img id="modal-img" src="" alt="">
                 <div class="contenedor_texto">
-                  <h2>SUPERMAN</h2>
-                  <p class="año">2025 - Acción y crimen</p>
-                  <p class="protagonista">Protagonizada por: <span>Mark Wahlberg</span></p>
-                  <p class="sinopsis">Sinopsis: La trama gira en torno a un golpe en el que Parker, su equipo (que incluye a Zen, interpretada por Rosa Salazar) y Grofield (LaKeith Stanfield) se enfrentan a la mafia de Nueva York</p>
+                  <h2 id="modal-titulo"></h2>
+                  <p class="año" id="modal-anio"></p>
+                  <p class="protagonista" id="modal-protagonista">Protagonista:</p>
+                  <p class="sinopsis" id="modal-sinopsis">Sinopsis:</p>
                 </div>
               </div>
               <span class="cerrar-detalles">&times;</span>
@@ -189,66 +189,36 @@
             <div class="header6"></div>
           </div>
           <div class="peliculas">
-            <div class="pelicula">
-              <div class="contenedor_imagen">
-                <img
-                  src="/images/new-poster-as-wallpaper-v0-oljaquwnw87e1.webp"
-                  alt="Superman_imagen"
-                />
-              </div>
-              <div class="peliculas_texto">
-                <p>Superman</p>
-                <h4>2023</h4>
-              </div>
-              <div class="peliculas_imagen">
-                <button class="boton-detalles">Ver Detalle</button>
-              </div>
-            </div>
-            <div class="pelicula">
-              <div class="contenedor_imagen">
-                <img
-                  src="/images/7ed2fe4a-2799-499b-89e8-ab4f05eeb214_source-aspect-ratio_1600w_0.jpg"
-                  alt="Minicraft_imagen"
-                />
-              </div>
-              <div class="peliculas_texto">
-                <p>Minecraft</p>
-                <h4>2022</h4>
-              </div>
-              <div class="peliculas_imagen">
-                <button class="boton-detalles">Ver Detalle</button>
-              </div>
-            </div>
-            <div class="pelicula">
-              <div class="contenedor_imagen">
-                <img
-                  src="/images/91e4d2a3ca390f5aa35fc53672aa01d4.jpg"
-                  alt="Jumanji_imagen"
-                />
-              </div>
-              <div class="peliculas_texto">
-                <p>Jumanji</p>
-                <h4>2023</h4>
-              </div>
-              <div class="peliculas_imagen">
-                <button class="boton-detalles">Ver Detalle</button>
-              </div>
-            </div>
-            <div class="pelicula">
-              <div class="contenedor_imagen">
-                <img class="soul_left"
-                  src="/images/desktop-wallpaper-disney-soul-movie-disney-pixel-soul-pixar.jpg"
-                  alt="Soul_imagen"
-                />
-              </div>
-              <div class="peliculas_texto">
-                <p>Soul</p>
-                <h4>2021</h4>
-              </div>
-              <div class="peliculas_imagen">
-                <button class="boton-detalles">Ver Detalle</button>
-              </div>
-            </div>
+            <% if (peliculas && peliculas.length) { %>
+              <% peliculas.forEach(function(pelicula) { %>
+                <div class="pelicula">
+                  <div class="contenedor_imagen">
+                    <img
+                      src="<%= pelicula.imagen.src %>"
+                      alt="<%= pelicula.imagen.alt %>"
+                      <% if (pelicula.imagen.clase_adicional) { %> class="<%= pelicula.imagen.clase_adicional %>" <% } %>
+                    />
+                  </div>
+                  <div class="peliculas_texto">
+                    <p><%= pelicula.titulo %></p>
+                    <h4><%= pelicula.anio %></h4>
+                  </div>
+                  <div class="peliculas_imagen">
+                    <button 
+                      class="boton-detalles"
+                      data-titulo="<%= pelicula.titulo %>"
+                      data-anio="<%= pelicula.anio %>"
+                      data-img="<%= pelicula.imagen.src %>"
+                      data-alt="<%= pelicula.imagen.alt %>"
+                      data-protagonista="<%= pelicula.protagonista %>"
+                      data-sinopsis="<%= pelicula.sinopsis %>"
+                    >Ver Detalle</button>
+                  </div>
+                </div>
+              <% }); %>
+            <% } else { %>
+              <p>No hay películas añadidas.</p>
+            <% } %>
           </div>
         </div>
       </section>

@@ -6,7 +6,9 @@
         "src": "/images/new-poster-as-wallpaper-v0-oljaquwnw87e1.webp",
         "alt": "Superman_imagen",
         "clase_adicional": null
-      }
+      },
+      "protagonista": "Mark Wahlberg",
+      "sinopsis": "La trama gira en torno a un golpe en el que Parker y su equipo se enfrentan a la mafia de Nueva York."
     },
     {
       "titulo": "Minecraft",
@@ -15,7 +17,9 @@
         "src": "/images/7ed2fe4a-2799-499b-89e8-ab4f05eeb214_source-aspect-ratio_1600w_0.jpg",
         "alt": "Minicraft_imagen",
         "clase_adicional": null
-      }
+      },
+      "protagonista": "Henry Cavill",
+      "sinopsis": "Un joven aventurero se embarca en una misión para salvar el mundo de Minecraft de una amenaza desconocida."
     },
     {
       "titulo": "Jumanji",
@@ -24,7 +28,9 @@
         "src": "/images/91e4d2a3ca390f5aa35fc53672aa01d4.jpg",
         "alt": "Jumanji_imagen",
         "clase_adicional": null
-      }
+      },
+      "protagonista": "Dwayne Johnson",
+      "sinopsis": "Un grupo de amigos es transportado al mundo de Jumanji, donde deben superar desafíos para regresar a casa."
     },
     {
       "titulo": "Soul",
@@ -33,6 +39,8 @@
         "src": "/images/desktop-wallpaper-disney-soul-movie-disney-pixel-soul-pixar.jpg",
         "alt": "Soul_imagen",
         "clase_adicional": "soul_left"
-      }
+      },
+      "protagonista": "Jamie Foxx",
+      "sinopsis": "Joe, un músico de jazz, explora el más allá y descubre el verdadero significado de la vida."
     }
 ]

@@ -86,5 +86,12 @@
     "contrasena": "1234",
     "imagen": "/images/usuario_default.webp",
     "copias": []
+  },
+  {
+    "id": 6,
+    "nombre": "juan",
+    "contrasena": "1234",
+    "imagen": "/images/usuario_default.webp",
+    "copias": []
   }
 ]

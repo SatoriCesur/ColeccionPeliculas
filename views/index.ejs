@@ -189,15 +189,11 @@
             <div class="header6"></div>
           </div>
           <div class="peliculas">
-            <% if (peliculas && peliculas.length) { %>
               <% peliculas.forEach(function(pelicula) { %>
                 <div class="pelicula">
                   <div class="contenedor_imagen">
                     <img
-                      src="<%= pelicula.imagen.src %>"
-                      alt="<%= pelicula.imagen.alt %>"
-                      <% if (pelicula.imagen.clase_adicional) { %> class="<%= pelicula.imagen.clase_adicional %>" <% } %>
-                    />
+                      src="<%= pelicula.imagen.src %>" alt="<%= pelicula.imagen.alt %>"/>
                   </div>
                   <div class="peliculas_texto">
                     <p><%= pelicula.titulo %></p>
@@ -216,9 +212,6 @@
                   </div>
                 </div>
               <% }); %>
-            <% } else { %>
-              <p>No hay películas añadidas.</p>
-            <% } %>
           </div>
         </div>
       </section>
